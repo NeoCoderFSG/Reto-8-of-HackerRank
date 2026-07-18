@@ -1,0 +1,53 @@
+Objetivo
+Hoy aprenderemos sobre el mapeo de pares Clave-Valor (Key-Value) utilizando una estructura de datos de Mapa o Diccionario. ¡Revisa la pestaña de Tutorial para ver los materiales de aprendizaje y un video instructivo!
+
+Tarea
+Dada una lista de nombres y números de teléfono, construye una agenda telefónica que asocie los nombres de tus amigos con sus respectivos números. Luego, se te dará una cantidad desconocida de nombres para buscar en tu agenda. Por cada nombre consultado, imprime la entrada asociada de tu agenda en una nueva línea con el formato nombre=numeroTelefono; si no se encuentra la entrada para ese nombre, imprime Not found en su lugar.
+
+Nota: Tu agenda telefónica debe ser una estructura de datos tipo Diccionario / Mapa / HashMap.
+
+Formato de Entrada
+La primera línea contiene un número entero que representa la cantidad de entradas en la agenda telefónica.
+
+Cada una de las líneas siguientes describe una entrada con valores separados por un espacio en una sola línea. El primer valor es el nombre de un amigo y el segundo valor es su número de teléfono de 8 dígitos.
+
+Después de las líneas de la agenda, hay un número desconocido de líneas con consultas (queries). Cada línea contiene un nombre a buscar, y debes continuar leyendo líneas hasta que no haya más datos de entrada.
+
+Nota: Los nombres consisten solo en letras minúsculas del alfabeto inglés y son únicamente primeros nombres.
+
+Restricciones
+El número de entradas y consultas puede ser grande.
+
+Formato de Salida
+En una nueva línea para cada consulta, imprime Not found si el nombre no tiene una entrada correspondiente en la agenda; de lo contrario, imprime el nombre completo y el número en el formato nombre=numeroTelefono.
+
+Ejemplo de Entrada
+Plaintext
+3
+sam 99912222
+tom 11122222
+harry 12299933
+sam
+edward
+harry
+Ejemplo de Salida
+Plaintext
+sam=99912222
+Not found
+harry=12299933
+Explicación
+Añadimos los siguientes pares (Clave, Valor) a nuestro mapa:
+
+sam -> 99912222
+
+tom -> 11122222
+
+harry -> 12299933
+
+Luego procesamos cada consulta:
+
+Consulta 0 (sam): Sam es una de las claves en nuestro diccionario, así que imprimimos sam=99912222.
+
+Consulta 1 (edward): Edward no está en nuestro diccionario, así que imprimimos Not found.
+
+Consulta 2 (harry): Harry es una de las claves en nuestro diccionario, así que imprimimos harry=12299933.
